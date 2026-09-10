@@ -29,10 +29,10 @@ p {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid (0 0 0 /0.2);
+    border: 1px solid;
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: white;
+    color: black;
     text-align: center;
 }
 
