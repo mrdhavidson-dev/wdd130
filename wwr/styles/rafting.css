@@ -17,9 +17,9 @@
     max-width: 1050px;
     margin: auto;
     background-color: white;
-    box-sizing: border-box 10px solid#333;
-    padding-right: 3x;
-
+    box-sizing: border-box;
+    border: 40px;
+    padding-left: 10px;
 }
 
 header {
@@ -32,6 +32,7 @@ body {
     font-family: var(--body-font);
     color: var(--primary-color);
     background-color: #f4f4f4;
+
 }
 
 header,
@@ -58,7 +59,7 @@ article {
 .hero {
     display: block;
     position: relative;
-    width: 100%;
+    max-width: 100%;
 
 }
 
@@ -76,7 +77,8 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding: 5px;
 
 }
 
@@ -84,7 +86,7 @@ h1 {
     position: absolute;
     bottom: 1px;
     background-color: burlywood;
-
+    margin-left: 30px;
 }
 
 h2 {
