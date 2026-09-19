@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #333;
-    --secondary-color: white;
-    --accent1-color: rgba(7, 163, 235, 0.938);
-    --accent2-color: gold;
+    --primary-color: #343a40;
+    --secondary-color: #f0ad4e;
+    --accent1-color: #212529;
+    --accent2-color: #f8f9fa;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -14,31 +14,32 @@
 }
 
 #content {
-    max-width: 1050px;
+    max-width: 1080px;
     margin: auto;
-    background-color: white;
+    background-color:var(--accent2-color);
     box-sizing: border-box;
-    border: 40px;
-    padding-left: 10px;
+    border: 1px solid var(--accent2-color);
+   
+    padding: 10px;
 }
 
 header {
-    background-color: white;
+    background-color: var(--primary-color);
     color: var(--primary-color);
 
 }
 
 body {
     font-family: var(--body-font);
-    color: var(--primary-color);
-    background-color: #f4f4f4;
+    color: var(--accent1-color);
+    background-color: var(--accent2-color);
 
 }
 
 header,
 main,
 footer {
-    width: 1000px;
+    width: 1024px;
     margin: auto;
 }
 
@@ -64,14 +65,17 @@ article {
 }
 
 h1 {
-    background-color: darkcyan;
+    background-color: var(--secondary-color);
     position: absolute;
     top: 20px;
-    width: 1024px;
+    width: 100%;
+    max-width: 100%;
     padding: 15px;
+    margin: auto;
     text-align: center;
     color: var(--primary-color);
     font-family: var(--heading-font);
+    
 }
 
 .hero article img {
@@ -85,16 +89,18 @@ h1 {
 .hero article {
     position: absolute;
     bottom: 1px;
-    background-color: burlywood;
-    margin-left: 30px;
+    background-color:var(--accent2-color);
+    margin-left: 20px;
+    opacity: 0.8;
+    
 }
 
 h2 {
 
     font-family: var(--heading-font);
     color: var(--primary-color);
-    background-color: darkcyan;
-
+    background-color: var(--secondary-color);
+    opacity: 0.7;
     text-align: center;
 
 }
@@ -102,4 +108,8 @@ h2 {
 footer img {
     width: 20px;
     height: auto;
+}
+
+footer {
+    border-top: 1px solid var(--accent1-color);
 }
