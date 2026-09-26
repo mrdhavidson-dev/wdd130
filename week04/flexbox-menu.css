@@ -13,8 +13,9 @@ nav ul {
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: centers;
+
 }
 
 nav a {
@@ -52,4 +53,8 @@ p {
 
 #devtools-btn:active {
     background-color: #2a3a4a;
+}
+
+nav li {
+    flex: 1 1 auto;
 }
