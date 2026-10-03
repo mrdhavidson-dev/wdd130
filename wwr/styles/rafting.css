@@ -48,7 +48,7 @@ nav {
 
 }
 
-nav a {
+header nav a {
     display: block;
     padding: 10px 30px;
     border: 1px solid var(--accent1-color);
@@ -79,9 +79,7 @@ article {
 
 }
 
-.socialmedia {
-    text-decoration: none;
-}
+
 
 .hero {
     display: block;
@@ -145,7 +143,6 @@ h2 {
 
 .history img {
     width: 250px;
-   
 }
 
 footer {
@@ -157,15 +154,16 @@ footer {
     text-align: center;
 }
 
+
 footer img {
     width: 20px;
     height: auto;
-    
 }
 
-footer.socialmedia {
-    display: flex;
-    justify-content: center;
+.socialmedia {
+    display:flex;
+    gap:10px;
+    
 }
 
 .adventures h2 {
@@ -177,7 +175,6 @@ footer.socialmedia {
     grid-template-columns: repeat(5,1fr);
     justify-content:space-around;
     gap: 10px;
-  
 }
 
 .adventures figure {
@@ -185,6 +182,5 @@ footer.socialmedia {
 }
 
 .adventures img {
- 
-   width: 100%;
+    width: 100%;
 }
