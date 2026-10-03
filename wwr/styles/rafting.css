@@ -161,6 +161,7 @@ footer img {
 }
 
 .socialmedia {
+    text-decoration:none;
     display:flex;
     gap:10px;
     
