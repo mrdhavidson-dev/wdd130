@@ -27,26 +27,33 @@ header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: grid;
-    grid-template-columns: 220px 1fr 1fr;
-    justify-content: space-between;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0 40px;
+   
 
 }
-
-header img {}
 
 ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap:0;
+    
 
 }
 
 nav {
-    flex: auto;
-    justif;
+    display: flex;
+    justify-self: end;
 
+}
+
+nav a {
+    display: block;
+    padding: 10px 30px;
+    border: 1px solid var(--accent1-color);
+    background-color: var(--accent2-color);
+    text-align: none;
 }
 
 body {
@@ -65,17 +72,15 @@ footer {
 }
 
 nav,
-p,
-section,
+p,section,
 article {
     margin: 15px;
     padding: 1px;
 
 }
 
-.socialmedia a {
+.socialmedia {
     text-decoration: none;
-
 }
 
 .hero {
@@ -123,6 +128,24 @@ h2 {
     background-color: var(--secondary-color);
     opacity: 0.7;
     text-align: center;
+
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+}
+
+.history img {
+    width: 250px;
+   
 }
 
 footer {
@@ -137,18 +160,24 @@ footer {
 footer img {
     width: 20px;
     height: auto;
-
+    
 }
 
 footer.socialmedia {
     display: flex;
+    justify-content: center;
+}
+
+.adventures h2 {
+    grid-column: 1 / -1;
 }
 
 .adventures {
-    display: flex;
-    justify-content: space-between;
-    gap: 4px;
-
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content:space-around;
+    gap: 10px;
+  
 }
 
 .adventures figure {
@@ -156,5 +185,6 @@ footer.socialmedia {
 }
 
 .adventures img {
-    width: 100%;
+ 
+   width: 100%;
 }
