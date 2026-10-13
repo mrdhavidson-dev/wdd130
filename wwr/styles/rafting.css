@@ -404,6 +404,7 @@ footer img {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    display: block;
 }
 
 .prev,
@@ -411,15 +412,46 @@ footer img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     color: var(--accent2-color);
     border: none;
     padding: 12px 12px;
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 1;
+    left: 0;
+    right: 0;
+
 }
 
-.home h2 {
+/*Styling for trips*/
+
+.trips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.trip img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip a {
+    display: inline-block;
+    background: #d9944f;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
     text-decoration: none;
 }
