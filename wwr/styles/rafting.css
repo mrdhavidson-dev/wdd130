@@ -363,3 +363,63 @@ footer img {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/*Styling for index.html*/
+.home h1 {
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 15px 15px;
+    margin: auto;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+}
+
+.slide::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--accent2-color);
+    border: none;
+    padding: 12px 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.home h2 {
+    text-decoration: none;
+}
